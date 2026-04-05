@@ -28,7 +28,7 @@ body {
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
+  overflow-x: visible;
 }
 
 a,
@@ -52,6 +52,8 @@ nav {
 }
 
 .nav-inner {
+  width: min(1120px, calc(100% - 3rem));
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -134,7 +136,7 @@ nav {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.12fr 0.88fr;
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
   align-items: stretch;
 }
